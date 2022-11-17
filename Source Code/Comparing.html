@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link href="./style4.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <!-- Nav Bar Start -->
+    <nav></nav>
+    <!-- Nav Bar End -->
+    <div class="w3-center">
+        <h1> Man Product Comparision Demo</h1>
+    </div>
+    <div class="w3-container">
+        <div class="w3-row-padding">
+            <div class="w3-col l3 m6 relPos">
+                <div class="selectProduct w3-padding" data-title="asd" data-id="J ." data-size="Cotton , washing wear"
+                    data-weight="4000 to 7000" data-processor="small || medium || large" data-battery="2300 mAH">
+                    <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                    <img src="./photos/g1.jpg" class="productImg">
+                    <h4>Mehandi Green Color</h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 relPos">
+                <div class="selectProduct w3-padding" data-title="asdd" data-id="Gul-ahmed"
+                    data-size="Cotton , Boski , whashing wear" data-weight="4000 to 8000"
+                    data-processor="small || medium || large" data-battery="2300 mAH">
+                    <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                    <img src="./photos/g3.jpg" class="productImg">
+                    <h4>Florida sky cotton kameez </h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 relPos">
+                <div class="selectProduct w3-padding" data-title="zxczx" data-id="Zara" data-size="Cotton"
+                    data-weight="1000 to 3000" data-processor="small || medium || large" data-battery="2300 mAH">
+                    <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                    <img src="./photos/zt7.jpg" class="productImg">
+                    <h4>Red with white check shirt</h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 relPos">
+                <div class="selectProduct w3-padding" data-title="call" data-id="Zara" data-size="Cotton"
+                    data-weight="1000 to 2000" data-processor="small || medium || large" data-battery="2300 mAH">
+                    <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                    <img src="./photos/zt6.jpg" class="productImg">
+                    <h4>Columbia polyester shirt</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--preview panel-->
+    <div class="w3-container">
+        <div class="w3-row w3-card-4 w3-grey w3-round-large w3-border comparePanle w3-margin-top">
+            <div class="w3-row">
+                <div class="w3-col l9 m8 s6 w3-margin-top">
+                    <h4>Added for comparison</h4>
+                </div>
+                <div class="w3-col l3 m4 s6 w3-margin-top">
+                     
+                    <button class="w3-btn w3-round-small w3-white w3-border notActive cmprBtn" disabled>Compare</button>
+                </div>
+            </div>
+            <div class=" titleMargin w3-container comparePan">
+            </div>
+        </div>
+    </div>
+    <!--end of preview panel-->
+
+    <!-- comparision popup-->
+    <div id="id01" class="w3-animate-zoom w3-white w3-modal modPos">
+        <div class="w3-container">
+            <a onclick="document.getElementById('id01').style.display='none'"
+                class="whiteFont w3-padding w3-closebtn closeBtn">×</a>
+        </div>
+        <div class="w3-row contentPop w3-margin-top">
+        </div>
+
+    </div>
+    <!--end of comparision popup-->
+
+    <!--  warning model  -->
+    <div id="WarningModal" class="w3-modal">
+        <div class="w3-modal-content warningModal">
+            <header class="w3-container w3-teal">
+                <h3><span>⚠</span>Error</h3>
+            </header>
+            <div class="w3-container">
+                <h4>Maximum of Three products are allowed for comparision</h4>
+
+            </div>
+            <footer class="w3-container w3-right-align">
+                <button id="warningModalClose" onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-btn w3-hexagonBlue w3-margin-bottom  ">Ok</button>
+            </footer>
+        </div>
+    </div>
+    <!--  end of warning model  -->
+
+
+</html><!-- girls comparing page start  -->
+<div class="w3-center">
+    <h1> Woman Product Comparision Demo</h1>
+</div>
+<div class="w3-container">
+    <div class="w3-row-padding">
+
+        <div class="w3-col l3 m6  relPos ">
+            <div class="selectProduct w3-padding" data-title="abc" data-id="Lime light collection" data-size="cotton"
+                data-weight="3000 t0 4400" data-processor="small || medium || large" data-battery="2300 mAH">
+                <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                <img src="./imges/g6.jpg" class="imgFill productImg">
+                <h4>2 Piece Dress</h4>
+            </div>
+        </div>
+        <div class="w3-col l3 m6  relPos ">
+            <div class="selectProduct w3-padding" data-title="def" data-id="Gul-ahmed collection" data-size="jersi"
+                data-weight="1500 to 2000" data-processor="small || medium || large" data-battery="2300 mAH">
+                <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                <img src="./imges/l2.jpg" class="imgFill productImg">
+                <h4>Printed Dress</h4>
+            </div>
+        </div>
+        <div class="w3-col l3 m6  relPos ">
+            <div class="selectProduct w3-padding" data-title="ghi" data-id="Asim jofa walima collection"
+                data-size="Net , Banarsi" data-weight="40000 to 57000" data-processor="small || medium || large"
+                data-battery="2300 mAH">
+                <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                <img src="./imges/p11.jpg" class="imgFill productImg">
+                <h4>Fancy Maxi</h4>
+            </div>
+        </div>
+        <div class="w3-col l3 m6  relPos ">
+            <div class="selectProduct w3-padding" data-title="jkl" data-id="j. walima collection" data-size="Net"
+                data-weight="250000 to 300000" data-processor="small || medium || large" data-battery="2300 mAH">
+                <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                <img src="./imges/p4.jpg" class="imgFill productImg">
+                <h4>Cream Colour Maxi</h4>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+<!--preview panel-->
+<div class="w3-container">
+    <div class="w3-row w3-card-4 w3-grey w3-round-large w3-border comparePanle w3-margin-top">
+        <div class="w3-row">
+            <div class="w3-col l9 m8 s6 w3-margin-top">
+                <h4>Added for comparison</h4>
+            </div>
+            <div class="w3-col l3 m4 s6 w3-margin-top">
+                 
+                <button class="w3-btn w3-round-small w3-white w3-border notActive cmprBtn" disabled>Compare</button>
+            </div>
+        </div>
+        <div class=" titleMargin w3-container comparePan">
+        </div>
+    </div>
+</div>
+<!--end of preview panel-->
+
+<!-- comparision popup-->
+<div id="id01" class="w3-animate-zoom w3-white w3-modal modPos">
+    <div class="w3-container">
+        <a onclick="document.getElementById('id01').style.display='none'"
+            class="whiteFont w3-padding w3-closebtn closeBtn">×</a>
+    </div>
+    <div class="w3-row contentPop w3-margin-top">
+    </div>
+
+</div>
+<!--end of comparision popup-->
+
+<!--  warning model  -->
+<div id="WarningModal" class="w3-modal">
+    <div class="w3-modal-content warningModal">
+        <header class="w3-container w3-teal">
+            <h3><span>⚠</span>Error</h3>
+        </header>
+        <div class="w3-container">
+            <h4>Maximum of Three products are allowed for comparision</h4>
+
+        </div>
+        <footer class="w3-container w3-right-align">
+            <button id="warningModalClose" onclick="document.getElementById('id01').style.display='none'"
+                class="w3-btn w3-hexagonBlue w3-margin-bottom">Ok</button>
+        </footer>
+    </div>
+</div>
+<!--  girls comparing page end-->
+<!-- Footer Start -->
+<footer><div class="container py-5">
+    <div class="row">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="index.html">
+          <img class="logo" src="./images/D.png">
+        </a>
+        <p class="desc">This is Dream Weaver. We provide service of cloths.</p>
+      </div>
+      <div class="col-md-2">
+        <h3 class="title">links</h3>
+        <div class="linkContainer">
+          <a href="./index.html">Home Page</a>
+          <a href="./detail.html">Detail </a>
+          <a href="./contact.html">ContactUs</a>
+          <a href="./Comparing.html">Comparing</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h3 class="title">newslatter</h3>
+        <form class="d-flex justify-content-center flex-column">
+          <input type="email" maxlength="30" placeholder="Your Email Address" required>
+          <button type="submit">SUBSCRIBE NOW</button>
+        </form>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center flex-column align-items-center">
+        <h3 class="title">contact</h3>
+        <p class="znc">02,shah faisal colony<br>
+          3218 karachi, <br>Pakistan karachi</p>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+      </div>
+    </div>
+  </div></footer>
+<!-- Footer End -->
+</body>
+<script src="./jquery.min.js"></script>
+<script src="./bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+<script src="./compare.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/header.js"></script>
+
+</html>
